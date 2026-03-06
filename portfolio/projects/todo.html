@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple To-Do List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-purple-50 to-indigo-100 flex justify-center items-center min-h-screen">
+
+  <div class="bg-white/90 backdrop-blur p-8 rounded-2xl shadow-xl max-w-md w-full">
+    <h2 class="text-2xl font-bold mb-4 text-gray-800">Animated To-Do List</h2>
+
+    <div class="flex gap-2 mb-4">
+      <input id="taskInput" class="border w-full px-3 py-2 rounded-lg shadow-sm focus:ring-2 focus:ring-purple-400 outline-none"
+             placeholder="Enter task">
+      <button onclick="addTask()"
+              class="px-4 py-2 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 hover:scale-105 transition">
+        Add
+      </button>
+    </div>
+
+    <ul id="taskList" class="space-y-2"></ul>
+  </div>
+
+<script>
+function addTask() {
+  let input = document.getElementById("taskInput");
+  if(input.value.trim() === "") return;
+
+  let li = document.createElement("li");
+  li.className =
+    "flex justify-between items-center bg-purple-50 px-3 py-2 rounded-lg shadow-sm border " +
+    "transition transform duration-300 hover:-translate-y-1";
+
+  li.innerHTML = `
+    <span class="animate-fade">${input.value}</span>
+    <button onclick="removeTask(this)"
+      class="text-red-500 hover:text-red-700 transition">Delete</button>
+  `;
+
+  li.style.opacity = 0;
+  document.getElementById("taskList").appendChild(li);
+
+  setTimeout(() => { li.style.opacity = 1; li.style.transition="0.3s" }, 10);
+  input.value = "";
+}
+
+function removeTask(btn){
+  let li = btn.parentElement;
+  li.style.opacity = 0;
+  li.style.transform = "translateX(-10px)";
+  setTimeout(()=> li.remove(), 300);
+}
+</script>
+</body>
+</html>

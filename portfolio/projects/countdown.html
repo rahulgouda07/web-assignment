@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animated Countdown Timer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-indigo-50 to-purple-100 flex justify-center items-center min-h-screen">
+
+  <div class="bg-white/90 backdrop-blur p-8 rounded-2xl shadow-xl max-w-sm w-full text-center">
+    <h2 class="text-2xl font-bold mb-3">Countdown Timer</h2>
+
+    <input id="seconds" type="number"
+           class="border px-3 py-2 w-full rounded-lg shadow-sm focus:ring-2 focus:ring-purple-400 outline-none mb-3"
+           placeholder="Enter seconds">
+
+    <button onclick="startTimer()"
+      class="px-5 py-2 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 hover:scale-105 transition">
+      Start
+    </button>
+
+    <h3 id="display" class="text-4xl font-extrabold mt-5 text-purple-700"></h3>
+  </div>
+
+<script>
+let interval;
+
+function startTimer() {
+  clearInterval(interval);
+  let time = parseInt(document.getElementById("seconds").value);
+  let display = document.getElementById("display");
+
+  interval = setInterval(() => {
+    display.style.transform = "scale(1.2)";
+    display.style.transition = "0.2s";
+    setTimeout(()=> display.style.transform="scale(1)", 200);
+
+    display.innerText = time + "s";
+    if(time <= 0) clearInterval(interval);
+    time--;
+  }, 1000);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dev Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+.reveal{opacity:0;transform:translateY(24px);transition:.7s ease}
+.reveal.active{opacity:1;transform:none}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="container nav-inner">
+
+    <div class="logo">
+      Rahul.DEV
+    </div>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="menu" class="menu-btn">☰</button>
+  </div>
+
+  <div id="mobileNav" class="mobile-nav hidden">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="container hero-grid">
+
+    <div class="hero-text reveal">
+
+      <span class="badge">
+        Web Developer • Frontend
+      </span>
+
+      <h1>
+        Creating elegant, high-performance web experiences.
+      </h1>
+
+      <p>
+        I design responsive, accessible and scalable web applications with clean UI engineering
+        and modern development practices.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-outline">
+          View Work
+        </a>
+
+        <a href="#contact" class="btn-outline">
+          Hire Me
+        </a>
+      </div>
+
+    </div>
+
+    <div class="hero-image reveal">
+
+      <div class="photo-card">
+
+        <img src="assets/hero-profile.jpeg"
+             alt="Web Developer Photo">
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+
+    <h2 class="section-title reveal">About Me</h2>
+    <p class="section-sub reveal">Professional profile and value proposition</p>
+
+    <div class="about-grid">
+
+      <div class="card reveal">
+        <p>
+          I am a results-oriented web developer focused on usability, performance, and maintainable codebases.
+          I collaborate with design and product teams to build scalable digital experiences.
+        </p>
+
+        <div class="stats">
+          <div>
+            <h3>1+ yrs</h3>
+            <span>Experience</span>
+          </div>
+
+          <div>
+            <h3>10+</h3>
+            <span>Projects</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div style="margin-top: 20px; line-height: 30px;">
+
+            <h4>Core Capabilities</h4>
+
+            <ul>
+                <li>Modern frontend architectures</li>
+                <li>Reusable UI components</li>
+                <li>Performance optimization</li>
+                <li>REST & API integrations</li>
+            </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="container">
+
+    <h2 class="section-title reveal">Technical Skills</h2>
+    <p class="section-sub reveal">Proficiency and tooling expertise</p>
+
+    <div class="skills-grid">
+
+      <div class="skill-card reveal">HTML • CSS • Responsive UI</div>
+      <div class="skill-card reveal">JavaScript • ES6+</div>
+      <div class="skill-card reveal">React / Frontend Frameworks</div>
+      <div class="skill-card reveal">Git • Version Control</div>
+      <div class="skill-card reveal">API Integration (REST)</div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+
+    <h2 class="section-title reveal">Selected Projects</h2>
+    <p class="section-sub reveal">Demonstrating applied engineering craft</p>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-thumb"></div>
+        <div class="project-body">
+          <h4>Todo List</h4>
+          <p>Task management app with clean UI and smooth interactions.</p>
+          <a href="projects/todo.html" target="_blank" class="btn-small">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-thumb"></div>
+        <div class="project-body">
+          <h4>Random Color Generator</h4>
+          <p>Generates random colors with copy-to-clipboard support.</p>
+          <a href="projects/color-generator.html" target="_blank" class="btn-small">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-thumb"></div>
+        <div class="project-body">
+          <h4>Minimalistic Timer</h4>
+          <p>Simple, distraction-free countdown and focus timer.</p>
+          <a href="projects/countdown.html" target="_blank" class="btn-small">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-thumb"></div>
+        <div class="project-body">
+            <h4>Aesthetic Periodic Table</h4>
+            <p>Visually appealing periodic table designed with a clean and modern UI.</p>
+            <a href="projects/Ptable.html" target="_blank" class="btn-small">View Project</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="container">
+
+    <h2 class="section-title reveal">Experience</h2>
+    <p class="section-sub reveal">Professional roles and engagements</p>
+
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <h4>Frontend Developer — Freelance</h4>
+        <small>2023 — Present</small>
+
+        <p>
+          Delivered performant web solutions for startups and small businesses.
+        </p>
+      </div>
+
+      <div class="timeline-item reveal">
+        <h4>Higher Secondary Education — Web Tech</h4>
+        <small>2022 — 2023</small>
+
+        <p>
+          Built responsive interfaces and optimized delivery pipelines.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+
+    <h2 class="section-title reveal">Get In Touch</h2>
+    <p class="section-sub reveal">Project inquiries and collaboration</p>
+
+    <div class="contact-box reveal">
+
+      <form class="contact-form">
+
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email Address">
+
+        <textarea rows="4" placeholder="Message"></textarea>
+
+        <button class="btn-primary">
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="footer">
+  © 2026 Rahul Gouda — All Rights Reserved
+</footer>
+
+
+<script>
+
+const reveals=document.querySelectorAll(".reveal");
+
+const obs=new IntersectionObserver(e=>{
+e.forEach(x=>{
+if(x.isIntersecting)
+x.target.classList.add("active")
+})
+},{threshold:.2})
+
+reveals.forEach(r=>obs.observe(r))
+
+
+document.getElementById("menu").onclick=()=>{
+const m=document.getElementById("mobileNav")
+m.classList.toggle("hidden")
+}
+
+</script>
+
+</body>
+</html>
