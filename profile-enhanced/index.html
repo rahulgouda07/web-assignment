@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="profile-header">
+        <h1 id="greeting-title">Student Profile</h1>
+    </header>
+
+    <main class="container">
+        <section class="profile-intro">
+            <div class="image-container">
+                <img src="./assets/hero-profile.jpeg" alt="Profile Picture of Rahul" class="profile-img">
+            </div>
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p><strong>Name:</strong> Rahul Gouda</p>
+                <p><strong>Class:</strong> Bachelor of Computer Application</p>
+                <p><strong>Hobbies:</strong> Exploring new Technologies, Reading Books, Browsing Internet, Playing Video
+                    Games.</p>
+            </div>
+        </section>
+
+        <section class="lists-section">
+            <div class="subjects">
+                <h2> Subjects</h2>
+                <ul id="subject-list">
+                    <li>C Programming</li>
+                    <li>Data Structures</li>
+                    <li>Digital Logic</li>
+                    <li>Python Programming</li>
+                    <li>Web Technologies</li>
+                </ul>
+            </div>
+
+            <div class="goals">
+                <h2>Current Goals</h2>
+                <ol>
+                    <li>Master complex concepts in C programming.</li>
+                    <li>Gain proficiency in Python programming.</li>
+                    <li>Learn about DSA</li>
+                    <li>Optimize my GitHub workflow within Visual Studio Code.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="academic-section">
+            <h2>Academic Performance</h2>
+            <table id="marks-table">
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>C Programming</td>
+                        <td class="mark">95</td>
+                    </tr>
+                    <tr>
+                        <td>Data Structures</td>
+                        <td class="mark">82</td>
+                    </tr>
+                    <tr>
+                        <td>Digital Logic</td>
+                        <td class="mark">92</td>
+                    </tr>
+                    <tr>
+                        <td>Python Programming</td>
+                        <td class="mark">97</td>
+                    </tr>
+                    <tr>
+                        <td>Web Technologies</td>
+                        <td class="mark">87</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p id="average-display" class="bonus-stat"></p>
+            <button id="calc-avg-btn" class="action-btn">Calculate Average Marks</button>
+        </section>
+
+        <section class="links-section">
+            <h2>Favorite Website</h2>
+            <a href="https://github.com/rahulgouda07" target="_blank" class="fav-link">Visit My GitHub Platform</a>
+            <a href="https://w3schools.com" target="_blank" class="fav-link">W3schools</a>
+        </section>
+
+        <section class="contact-section">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="class">Class:</label>
+                    <input type="text" id="class" name="class" placeholder="Enter your class">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
