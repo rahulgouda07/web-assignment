@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result - Quiz App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <div class="card result-container">
+        <h2>Quiz Completed!</h2>
+        <div class="score-card">
+            <h1 id="scoreDisplay">0/0</h1>
+            <p>Correct Answers</p>
+        </div>
+        <button onclick="window.location.href='dashboard.html'" class="btn secondary-btn">Back to Dashboard</button>
+        <button onclick="window.location.href='quiz.html'" class="btn primary-btn">Restart Quiz</button>
+    </div>
+    <script src="js/storage.js"></script>
+    <script src="js/result.js"></script>
+</body>
+</html>
